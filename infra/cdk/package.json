@@ -1,0 +1,34 @@
+{
+	"name": "cdk-ec2-template",
+	"version": "0.1.0",
+	"private": true,
+	"packageManager": "pnpm@10.22.0",
+	"bin": {
+		"cdk": "bin/cdk.js"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"watch": "tsc -w",
+		"typecheck": "tsc --noEmit",
+		"cdk": "cdk",
+		"synth": "cdk synth",
+		"deploy": "cdk deploy",
+		"destroy": "cdk destroy",
+		"build:types": "tsc -p tsconfig.build.json --emitDeclarationOnly",
+		"lint": "biome lint .",
+		"format": "biome format --write ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.6",
+		"@tsconfig/strictest": "2.0.8",
+		"@types/node": "22.19.15",
+		"aws-cdk": "2.1109.0",
+		"cdk-nag": "^2.37.55",
+		"ts-node": "10.9.2",
+		"typescript": "5.6.3"
+	},
+	"dependencies": {
+		"aws-cdk-lib": "2.241.0",
+		"constructs": "10.5.1"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"lib": ["es2023"],
+		"rootDir": ".",
+		"outDir": "dist",
+		"declaration": true,
+		"declarationMap": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noImplicitReturns": true,
+		"inlineSourceMap": false,
+		"inlineSources": false,
+		"skipLibCheck": true,
+		"typeRoots": ["./node_modules/@types"],
+		"types": ["node"],
+		"noEmit": true,
+		"esModuleInterop": true,
+		"isolatedModules": true
+	},
+	"include": ["bin/**/*.ts", "lib/**/*.ts"],
+	"exclude": ["node_modules", "dist", "cdk.out"]
+}
